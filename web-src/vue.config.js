@@ -9,13 +9,13 @@ module.exports = {
     devServer: {
         proxy: {
             '': {
-                target: 'http://localhost:5000'
+                target: 'https://congenial-space-zebra-7j7vp76vq56crrv7-5000.app.github.dev:5000'
             },
             '/': {
-                target: 'ws://localhost:5000',
+                target: 'ws://congenial-space-zebra-7j7vp76vq56crrv7-5000.app.github.dev:5000',
                 ws: true,
                 headers: {
-                    Origin: 'http://localhost:5000'
+                    Origin: 'http://congenial-space-zebra-7j7vp76vq56crrv7-5000.app.github.dev:5000'
                 }
             }
         }

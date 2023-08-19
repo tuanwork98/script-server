@@ -55,8 +55,8 @@
     "vue-template-compiler": "^2.7.10"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "export SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:unit-ci": "vue-cli-service test:unit -b ChromeHeadless",
     "stryker": "stryker run tests/unit/stryker.conf.js"
