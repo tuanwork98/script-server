@@ -7,5 +7,5 @@ sys.path.append("src")
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 import main
-
+# start
 main.main()
