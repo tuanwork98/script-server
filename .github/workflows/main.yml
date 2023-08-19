@@ -6,5 +6,4 @@ jobs:
   start-app:
     runs-on: [ubuntu-lasted]
     steps:
-      - run: apt install -y python3 python3-pip
-      - run: python3 launcher.py
+      - run: echo hello
